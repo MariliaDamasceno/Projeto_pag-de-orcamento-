@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="midias/favicon.ico" type="image/x-icon">
     <title>Home</title>
 </head>
@@ -13,11 +14,11 @@
 <body class="home">
 
 
-    <header>
+    <header >
         <section>
             <div>
-                <ul>
-                    <li><a href="https://instagram.com/engenhocas_profpardal?igshid=NzZlODBkYWE4Ng==" target="_blank"><i
+                <ul >
+                    <li ><a href="https://instagram.com/engenhocas_profpardal?igshid=NzZlODBkYWE4Ng==" target="_blank"><i
                                 class="bi bi-instagram"></i></a></li>
                     <li><a href="https://www.tiktok.com/@engenhocas.do.pro?_t=8flw77efNu2&_r=1" target="_blank"><i
                                 class="bi bi-tiktok"></i></a></li>
@@ -25,14 +26,14 @@
                 </ul>
             </div>
 
-            <div>
+            <div >
                 <ul>
                     <li><a href="index.html"><img src="midias/logo.200x180.jpeg" alt="logo"></a></li>
                 </ul>
             </div>
 
             <div>
-                <a href="sobre_nos.html">Sobre nós</a>
+                <a href="sobre_nos.html" >Sobre nos</a>
                 <a href="produtos.html">Produtos</a>
             </div>
         </section>
@@ -48,18 +49,31 @@
             <h2 class="sombreado">Aqui você encontrará</h2>
             <div>
                 <div class="caixa">
-                    <p>Artigos de decoração com sua cara</p>
+                    <p class="texto-caixa">Artigos de decoração com sua cara</p>
                 </div>
                 <div class="caixa">
-                    <p>Artigos que contam e marcam uma história</p>
+                    <p class="texto-caixa">Artigos que contam e marcam uma história</p>
                 </div>
                 <div class="caixa">
-                    <p>Um serviço personalizado</p>
+                    <p class="texto-caixa">Um serviço personalizado</p>
                 </div>
                 <div class="caixa">
-                    <p>Peças a pronta entrega</p>
+                    <p class="texto-caixa">Peças a pronta entrega</p>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <div class="barra">
+                <a href="produtos.html" class="barra">Clique aqui e conheça alguns de nossos produtos ou faça um orçamento</a>
+            </div>
+        </section>
+
+        <section id="localizacao">
+            <label for="localidade" id="texto-localidade">Sua localidade</label>
+            <input type="text" placeholder="Digite seu cep" id="localidade">
+            <p class="minha-localizacao"></p>
+            <button onclick="consultaEndereco()" id="button-cep">Buscar</button>
         </section>
 
     </main>
@@ -70,7 +84,7 @@
         </section>
 
     </footer>
-
+<script src="js/script-index.js"></script>
 </body>
 
 </html>

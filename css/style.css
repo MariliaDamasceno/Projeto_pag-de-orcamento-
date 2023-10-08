@@ -1,0 +1,288 @@
+
+.home {
+    background-image: url("https://img.freepik.com/fotos-premium/fundo-de-ferro-azul-com-textura-tinta-vazada_96872-2402.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+:root{
+    --background-fh: rgb(207, 214, 238);
+
+}
+/* Estilização header */
+
+header {
+    background-color: var(--background-fh);
+    padding: 15px;
+}
+
+header section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: baseline;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+}
+
+header section ul li {
+    margin-right: 20px; 
+}
+
+
+header section ul li a {
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+
+header section ul li img {
+    max-width: 100px; 
+}
+
+header section div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 20px; 
+}
+
+header section div a:hover{
+    font-size: 2rem;
+
+}
+
+main p{
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*estilzação do footer*/
+
+footer {
+    background-color: var(--background-fh); 
+    color: #070707; 
+    padding: 15px; / 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px; 
+    font-style: italic;
+    text-align: center;
+}
+
+main section h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.caixa {
+    border: 2mm ridge #494949; 
+    background-color: hsla(187, 42%, 54%, 0.452);
+    width: 220px; 
+    height: 150px; 
+    padding: 10px; 
+    margin: 10px; 
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caixa:hover {
+    background-color: hsla(187, 42%, 54%, 0.752); 
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    
+}
+ .texto-caixa{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+        
+ }
+
+ .sombreado{
+
+    text-shadow: 1px 1px 2px #d1c9c9, -1px -1px 2px #d1c9c9, 1px -1px 2px #d1c9c9, -1px 1px 2px #d1c9c9;
+ }   
+ 
+
+ section h2 {
+
+    margin-left: 32px;
+    color: #272222;
+    font-size: 45px;
+ }
+
+ section a {
+
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    margin-right: 20px;
+ }
+
+ .barra{
+  text-align: end;
+  font-weight: 900;
+  font-size: 35px; 
+  color: #070606; 
+  background-color: #d1c9c9; 
+  margin: 2rem;
+  
+  .barra:hover{
+    font-size: 38px;
+    color: rgb(139, 139, 218)
+  }
+
+ }
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-weight: bold; 
+}
+
+
+td {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+h1 {
+    font-size: 24px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+section form {
+    width: 80%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+button[type="submit"] {
+    background-color: #739973; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.imagem-legenda {
+    display:inline-block; 
+    max-width: 200px; 
+    margin-right: 200px; 
+}
+/*estilização pag sobre nos*/
+
+.sobrenos{
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    background-color: rgba(255, 255, 255, 0.897);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*estilização cep*/
+
+#localizacao{
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    margin: auto;
+    padding: 1rem;
+    width: 350px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    padding-right: 1.5rem;
+}
+
+#localidade{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+}
+
+.minha-localizacao{
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#texto-localidade{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#button-cep{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 166, 252);
+    border-radius: 8px;
+}
+
+#button-cep:hover{
+    transform: scale(1.07); 
+    background-color: rgb(1, 135, 175);
+
+}
